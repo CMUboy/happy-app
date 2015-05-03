@@ -4,10 +4,10 @@ class HappyController < ApplicationController
   end
 
   def joke
-    Joke.offset(rand(Joke.count)).first
+    @joke = Joke.offset(rand(Joke.count)).first
   end
 
   def quote
-    Quote.offset(rand(Quote.count)).first
+    @quote = Quote.offset(rand(Quote.count)).first
   end
 end

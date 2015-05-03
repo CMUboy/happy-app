@@ -1,2 +1,5 @@
-<h1>Happy#joke</h1>
-<p>Find me in app/views/happy/joke.html.erb</p>
+<p><%= @joke.setup %></p>
+<p>
+  <small><%= @joke.punchline %></small>
+</p>
+<%= render "shared/buttons" %>

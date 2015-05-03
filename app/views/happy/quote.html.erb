@@ -1,2 +1,7 @@
-<h1>Happy#quote</h1>
-<p>Find me in app/views/happy/quote.html.erb</p>
+<blockquote>
+  <p>&ldquo;<%= @quote.text %>&rdquo;</p>
+  <p>
+    <small><%= @quote.author %></small>
+  </p>
+</blockquote>
+<%= render "shared/buttons" %>
