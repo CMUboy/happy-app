@@ -4,4 +4,4 @@
 
 $(document).ready ->
   $("a[data-remote]").on "ajax:success", (e, data, status, xhr) ->
-    $('#happyPanelBody').html($.parseHTML(data))
+    $('#happyPanelBody').hide().html($.parseHTML(data)).fadeIn()
